@@ -1,6 +1,6 @@
 # Hyperflex Cluster
 intersight_organization_name = "default"
-cluster_name                 = "edge2"
+cluster_name                 = "edge1"
 disk_cleanup                 = "true"
 vdi_opt                      = "false"
 laz_config                   = "false"
@@ -20,20 +20,20 @@ uplink_speed = "10G"
 replication = "2"
 
 # HX Management IP
-mgmt_vlan_name = "hx-mgmt-1"
-mgmt_vlan_id   = "1"
-hx_mgmt_ip     = "198.18.134.100"
-hx_ip_start    = "198.18.134.103"
-hx_ip_end      = "198.18.134.104"
+mgmt_vlan_name = "hx-mgmt-0"
+mgmt_vlan_id   = "0"
+hx_mgmt_ip     = "198.18.135.100"
+hx_ip_start    = "198.18.135.103"
+hx_ip_end      = "198.18.135.104"
 hx_netmask     = "255.255.192.0"
 hx_gateway     = "198.18.128.1"
 
 # MAC prefix
-mac_prefix = "00:25:B5:02"
+mac_prefix = "00:25:B5:01"
 
 # Storage VLAN
-storage_vlan_name = "hx-storage-103"
-storage_vlan_id   = "103"
+storage_vlan_name = "hx-storage-102"
+storage_vlan_id   = "100"
 
 # HXDP Version
 hxdp_version = "5.0(2a)"
@@ -51,11 +51,11 @@ esx_admin = "root"
 esx_password = "CIsco123!!"
 
 # ESXi Management IP
-node_prefix   = "hx-edge2-esxi"
-mgmt_ip_start = "198.18.136.101"
-mgmt_ip_end   = "198.18.136.102"
+node_prefix   = "hx-edge-esxi"
+mgmt_ip_start = "198.18.135.101"
+mgmt_ip_end   = "198.18.135.102"
 mgmt_netmask  = "255.255.192.0"
-mgmt_gateway  = "198.18.1136.1"
+mgmt_gateway  = "198.18.128.1"
 
 # Time
 timezone = "Etc/GMT"
@@ -129,6 +129,6 @@ proxy_password = "password"
 
 
  server_names = {
-  "WZP23300NU3" = { hostname = "hx-edge2-esxi-03", esx_ip = "198.18.136.101", hx_ip = "198.18.136.103" },
-  "WZP23300593" = { hostname = "hx-edge2-esxi-04", esx_ip = "198.18.136.102", hx_ip = "198.18.136.104" }
+  "WZP23300NU2" = { hostname = "hx-edge-esxi-01", esx_ip = "198.18.135.101", hx_ip = "198.18.135.103" },
+  "WZP2330059G" = { hostname = "hx-edge-esxi-02", esx_ip = "198.18.135.102", hx_ip = "198.18.135.104" }
   }
