@@ -55,7 +55,7 @@ node_prefix   = "hx-edge2-esxi"
 mgmt_ip_start = "198.18.134.101"
 mgmt_ip_end   = "198.18.134.102"
 mgmt_netmask  = "255.255.192.0"
-mgmt_gateway  = "198.18.134.1"
+mgmt_gateway  = "198.18.128.1"
 
 # Time
 timezone = "Etc/GMT"
