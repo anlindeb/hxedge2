@@ -52,10 +52,10 @@ esx_password = "CIsco123!!"
 
 # ESXi Management IP
 node_prefix   = "hx-edge2-esxi"
-mgmt_ip_start = "198.18.136.101"
-mgmt_ip_end   = "198.18.136.102"
+mgmt_ip_start = "198.18.134.101"
+mgmt_ip_end   = "198.18.134.102"
 mgmt_netmask  = "255.255.192.0"
-mgmt_gateway  = "198.18.1136.1"
+mgmt_gateway  = "198.18.134.1"
 
 # Time
 timezone = "Etc/GMT"
@@ -66,8 +66,8 @@ dns_domain = "dcloud.cisco.com"
 dns        = ["198.18.133.1"]
 
 # UCSM KVM IP
-kvm_ip_start = "198.18.135.116"
-kvm_ip_end = "198.18.135.117"
+kvm_ip_start = "198.18.134.116"
+kvm_ip_end = "198.18.134.117"
 kvm_netmask = "255.255.192.0"
 kvm_gateway = "198.18.128.1"
 
@@ -129,6 +129,6 @@ proxy_password = "password"
 
 
  server_names = {
-  "WZP23300NU3" = { hostname = "hx-edge2-esxi-03", esx_ip = "198.18.136.101", hx_ip = "198.18.136.103" },
-  "WZP23300593" = { hostname = "hx-edge2-esxi-04", esx_ip = "198.18.136.102", hx_ip = "198.18.136.104" }
+  "WZP23300NU3" = { hostname = "hx-edge2-esxi-03", esx_ip = "198.18.134.101", hx_ip = "198.18.134.103" },
+  "WZP23300593" = { hostname = "hx-edge2-esxi-04", esx_ip = "198.18.134.102", hx_ip = "198.18.134.104" }
   }
